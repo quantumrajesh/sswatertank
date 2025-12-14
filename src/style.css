@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+    .no-scrollbar::-webkit-scrollbar {
+        display: none;
+    }
+    .no-scrollbar {
+        -ms-overflow-style: none; 
+        scrollbar-width: none; 
+    }
+}
+
+body {
+    @apply text-slate-800 bg-white;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    @apply font-sans font-bold text-primary;
+}
